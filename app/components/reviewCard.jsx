@@ -13,8 +13,8 @@ const ReviewCard = ({image}) => {
             />
         </section>
         <section className='flex flex-col justify-center relative'>
-            <sup className='text-orange-500 text-xl abosulute -left-3 top-4'>"</sup>
-            <p className=''> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora vero voluptatibus corrupti minima pariatur repellendus commodi adipisci culpa voluptatem vel eveniet quia reprehenderit ut doloremque, illum temporibus repellat sunt cupiditate! <span className= 'text-orange-500 text-xl'>"</span></p>
+            <sup className='text-orange-500 text-xl abosulute -left-3 top-4'>&quot;</sup>
+            <p className=''> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora vero voluptatibus corrupti minima pariatur repellendus commodi adipisci culpa voluptatem vel eveniet quia reprehenderit ut doloremque, illum temporibus repellat sunt cupiditate! <span className= 'text-orange-500 text-xl'>&quot;</span></p>
             <b className='flex font-semibold mt-4 right-11'>Name</b>
             <p>CEO</p>
         </section>
