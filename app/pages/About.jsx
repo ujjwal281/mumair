@@ -12,12 +12,12 @@ const About = () => {
       initial ={{opacity : 0 , x:0}}
       transition={{duration : 1.5}}
       >
-      <section className='flex flex-col items-start pt-16 justify-end md:m-0 m-20'>
+      <section className='flex flex-col items-start pt-16 justify-end md:m-0 m-20 w-72'>
           <section className='relative'>
           <div className='absolute bg-orange-900 w-4/5 h-1/6 left-8 z-20 opacity-30 -top-4'>
           </div>
             <Image
-            style={{ scale : "1.22" , top : "-47px"}}
+            style={{ scale : "1.21" , top : "-44px"}}
             className=' absolute'
             src='/face/face3.png'
             alt='face'

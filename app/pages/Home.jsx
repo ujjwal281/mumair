@@ -20,8 +20,8 @@ const Home = () => {
            whileTap={{ scale: 0.9 }}  className='bg-orange-600 p-2 rounded-lg px-8 text-white flex justify-center items-center w-fit mt-4'>Hire Me</motion.button>
         </section>
 
-        <section className='flex flex-col items-end justify-end md:m-0 m-20 pt-16'>
-          <section className='relative'>
+        <section className='flex flex-col items-end justify-end pt-16 w-60 '>
+          <section className='relative w-full'>
             <div className='absolute bg-orange-900 w-4/5 h-1/5 left-8 z-20 opacity-30 -top-7'>
             </div>
             <Image

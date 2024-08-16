@@ -3,7 +3,7 @@ import React from 'react'
 
 const ReviewCard = ({image}) => {
   return (
-    <div className='flex bg-slate-400 h-full w-full object-cover gap-6 px-8 py-5'>
+    <div className='flex md:flex-row flex-col bg-slate-400 h-full w-full object-cover gap-6 px-8 py-5'>
         <section className='flex justify-center items-center p-4'>
             <Image
                 src= {`/reviewimage/${image}.png`}

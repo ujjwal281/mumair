@@ -1,12 +1,24 @@
 "use client"
-
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Media from '../components/media'
 import { SOCIALMEDIA } from '@/constants'
 import { motion } from 'framer-motion'
 
 
 const Footer = () => {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <motion.div  className="mt-28 bg-blue-gray-800"
     whileInView={{opacity : 1 , y: 0 }}
@@ -22,13 +34,13 @@ const Footer = () => {
         </div>
       </div>
 
-        <div className=" list-none flex gap-3 justify-center items-center font-medium text-sm">
-          <li className="p-2">Home</li>
-          <li className="p-2">About</li>
-          <li className="p-2">Services</li>
-          <li className="p-2">Projects</li>
-          <li className="p-2">Testimonals</li>
-          <li className="p-2">Contact</li>
+        <div className=" list-none md:flex gap-3 justify-center items-center font-medium text-sm grid-rows-2">
+          <li onClick={()=>{window.scrollTo(0,0)}}className="p-2 cursor-pointer cursor-pointer hover:text-orange-700">Home</li>
+          <li onClick={()=>{window.scrollTo(400,500)}}className="p-2 cursor-pointer hover:text-orange-700">About</li>
+          <li onClick={()=>{window.scrollTo(850,950)}} className="p-2 cursor-pointer hover:text-orange-700">Services</li>
+          <li onClick={()=>{window.scrollTo(1300,1400)}} className="p-2 cursor-pointer hover:text-orange-700">Projects</li>
+          <li onClick={()=>{window.scrollTo(1900,2000)}} className="p-2 cursor-pointer hover:text-orange-700">Testimonals</li>
+          <li onClick={()=>{window.scrollTo(3000,3000)}}  className="p-2 cursor-pointer hover:text-orange-700">Contact</li>
         </div>
 
         <div className='flex justify-center gap-4'>
