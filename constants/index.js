@@ -52,8 +52,8 @@ export const TECHBUTTON = [
 ]
 
 export const METER = [
-    "UX",
-    "Website Design",
-    "App Design",
-    "Graphic Design"
+    {title : "UX" , perc : "23"},
+    {title : "Website Design" , perc : "78"},
+    {title : "App Design" , perc : "21"},
+    {title : "Graphic Design" , perc : "90"}
 ]

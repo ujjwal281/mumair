@@ -40,7 +40,7 @@ const About = () => {
           <div className=' flex flex-col gap-2'>
             {
               METER.map((meter,index)=>{
-                return <ProgressBar key={index} meter = {meter}/>
+                return <ProgressBar key={index} meter = {meter.title} perc = {meter.perc}/>
               })
             }
           </div>
