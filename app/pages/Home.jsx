@@ -25,7 +25,7 @@ const Home = () => {
             <div className='absolute bg-orange-900 w-4/5 h-1/5 left-8 z-20 opacity-30 -top-7'>
             </div>
             <Image
-            style={{ scale : "1.11" , top : "-58px", left : "5px"}}
+            style={{ scale : "1.11" , top : "-56px", left : "5px"}}
             className=' absolute -top-14 left-1 '
             src='/face/face1.png'
             alt='face'
