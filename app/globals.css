@@ -2,32 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+    font-family: "Corvetta Personal Use";
+    src: url("https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.eot");
+    src: url("https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7edee2bc2d05e670908cdd165fb8b861.svg#Corvetta Personal Use")format("svg");
 }
