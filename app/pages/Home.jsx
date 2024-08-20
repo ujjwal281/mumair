@@ -1,7 +1,9 @@
 "use client"
+import { SOCIALMEDIA } from '@/constants'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
+import Media from '../components/media'
 
 
 const Home = () => {
@@ -20,7 +22,7 @@ const Home = () => {
            whileTap={{ scale: 0.9 }}  className='bg-orange-600 p-2 rounded-lg px-8 text-white flex justify-center items-center w-fit mt-4'>Hire Me</motion.button>
         </section>
 
-        <section className='flex flex-col items-end justify-end pt-16 w-60 '>
+        <section className='flex flex-col items-end justify-end pt-16 w-60 md:ml-40'>
           <section className='relative w-full'>
             <div className='absolute bg-orange-900 w-4/5 h-1/5 left-8 z-20 opacity-30 -top-7'>
             </div>
@@ -41,6 +43,14 @@ const Home = () => {
           />
 
         </section>
+        <div className=" flex justify-evenly w-full
+         gap-2">
+        {
+          SOCIALMEDIA.map((media,index)=>{
+            return <Media key={index} media={media}/>
+          })
+        }
+        </div>
           </section>
       </motion.div>
   )

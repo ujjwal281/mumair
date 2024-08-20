@@ -8,9 +8,9 @@ const TechCard = ({image}) => {
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
      className=' flex-col bg-gray-100 p-6 rounded-xl flex justify-center w-fit md:items-start items-center cursor-pointer'>
-      <div className=' h-20 flex justify-start items-center'>
+      <div className=' flex justify-start items-center p-2 h-fit'>
         <Image
-        className='h-fit w-fit '
+        className='h-fit w-fit'
         src={`/tech/${image}.png`}
         width={50}
         height={90}

@@ -12,3 +12,4 @@ const ProgressBar = ({meter,perc}) => {
 }
 
 export default ProgressBar
+
