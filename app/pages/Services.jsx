@@ -14,7 +14,7 @@ const Services = () => {
         <h1 className=" text-3xl font-bold flex justify-center">Services</h1>
         <p className="flex md:px-20 justify-center text-center px-5">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
       </div>
-      <div className="flex gap-4 md:justify-evenly px-7 flex-col md:flex-row items-center">
+      <div className="flex gap-4 md:justify-evenly px-7 flex-col md:flex-row items-center h-full">
         {
           TECH.map((value,index)=>{
             return<TechCard key={index} image = {value}/>

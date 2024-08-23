@@ -12,8 +12,8 @@ const TechCard = ({image}) => {
         <Image
         className='h-fit w-fit'
         src={`/tech/${image}.png`}
-        width={50}
-        height={90}
+        width={40}
+        height={60}
         alt=''
         />
       </div>
