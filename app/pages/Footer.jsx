@@ -25,7 +25,7 @@ const Footer = () => {
       initial ={{opacity : 0 , x:0}}
       transition={{duration : 1.5}}
     >
-        <div className='flex flex-col items-center gap-4 bg-gray-200 py-9 w-full '>
+        <div className='flex flex-col items-center gap-4 bg-gray-200 py-9 '>
       <div className="flex justify-center gap-7 mt-6">
         <div style={{ fontFamily: "Corvetta Personal Use"}} className=" text-xl flex justify-center rounded-full items-center bg-orange-500 text-white py-4 ">MU</div>
         <div className=" flex text-4xl justify-center items-center">
